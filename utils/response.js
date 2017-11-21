@@ -6,6 +6,7 @@ exports.success = (req, res) => {
 
 exports.error = (req, res) => {
     return (error) => {
+        // TODO if error.message
         res.json({"Error":true, "ErrorMessage": error.message});
     };
 };

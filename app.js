@@ -85,7 +85,7 @@ async.series([
     // }
 ], function(err, results) {
     if (err) {
-        console.log('Exception initializing database.');
+        console.log('Exception initializing database.', process.env);
         throw err;
     } else {
         console.log('Database initialization complete.');
